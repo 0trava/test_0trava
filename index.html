@@ -1,58 +1,107 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Светлана – Веб-разработчик</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Світлана – Веброзробниця</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <div class="container">
-      <h1>Светлана</h1>
-      <p class="subtitle">Веб-разработчик сайтов</p>
-    </div>
-  </header>
 
-  <section class="intro">
-    <div class="container">
-      <h2>Привет!</h2>
-      <p>Я создаю адаптивные, стильные и быстрые сайты. Буду рада сотрудничеству!</p>
-    </div>
-  </section>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#portfolio">My Works</a>
+        <a href="#contact">Contact</a>
+        <a href="#blog">Blog</a>
+    </nav>
 
-  <section class="portfolio">
-    <div class="container">
-      <h2>Портфолио</h2>
-      <div class="works">
-        <div class="work">
-          <img src="https://via.placeholder.com/300x200" alt="Проект 1" />
-          <p>Сайт ресторана</p>
+    <header id="home">
+        <div class="header-left">
+            <p class="subtitle">Знайду ваш стиль для</p>
+            <h1>Сайта Візитки</h1>
+            <p class="description">
+                Створюю лендінги, які розкривають весь потенціал вашого бізнесу — від дизайну до публікації.
+                Простий лендінг, який підкреслить ваш бізнес і донесе інформацію про ваші послуги.
+            </p>
         </div>
-        <div class="work">
-          <img src="https://via.placeholder.com/300x200" alt="Проект 2" />
-          <p>Интернет-магазин</p>
+        <div class="header-right">
+            <img src="https://via.placeholder.com/300x300" alt="Світлина">
         </div>
-        <div class="work">
-          <img src="https://via.placeholder.com/300x200" alt="Проект 3" />
-          <p>Личный блог</p>
-        </div>
-        <div class="work">
-          <img src="https://via.placeholder.com/300x200" alt="Проект 4" />
-          <p>Лендинг для курсов</p>
-        </div>
-        <div class="work">
-          <img src="https://via.placeholder.com/300x200" alt="Проект 5" />
-          <p>Сайт-визитка</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <footer>
-    <div class="container">
-      <p>Связаться: svetlana.lytvyn09@gmail.com | Telegram: @Otrava09</p>
+    <div class="social">
+        <a href="https://t.me/Otrava09" target="_blank">Telegram</a>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
     </div>
-  </footer>
+
+    <section id="about" class="intro container">
+        <h2>Про мене</h2>
+        <p>Мене звати Світлана, я створюю адаптивні, легкі та сучасні сайти — від простих візиток до лендінгів для
+            послуг і товарів.</p>
+        <p>Працюю швидко, допомагаю з дизайном, текстами й наповненням. Якщо вам дорого платити 14 000 грн за лендінг —
+            я можу зробити простий і якісний варіант за 4000–5000 грн.</p>
+        <p>Я відкрито спілкуюся, завжди на зв’язку, дотримуюсь дедлайнів і не ускладнюю там, де можна просто.</p>
+    </section>
+
+    <section class="experience container">
+        <h2>Experience</h2>
+        <h3>Previous associations that helped to gather experience</h3>
+        <ul>
+            <li>GOIT Full Stack Developer курс (2022–2023)</li>
+            <li>Фріланс: сайти-візитки, лендінги, SEO, контент, оформлення</li>
+            <li>HTML5, CSS3, адаптивна верстка, WebP/SVG</li>
+            <li>WordPress, Tilda, Figma, Photoshop, SketchUp</li>
+        </ul>
+    </section>
+
+    <section id="portfolio" class="portfolio container">
+        <h2>Portfolio</h2>
+        <div class="works">
+            <div class="work">
+                <img src="https://via.placeholder.com/300x200" alt="Проєкт 1" />
+                <p>Сайт ресторану</p>
+            </div>
+            <div class="work">
+                <img src="https://via.placeholder.com/300x200" alt="Проєкт 2" />
+                <p>Інтернет-магазин</p>
+            </div>
+            <div class="work">
+                <img src="https://via.placeholder.com/300x200" alt="Проєкт 3" />
+                <p>Особистий блог</p>
+            </div>
+            <div class="work">
+                <img src="https://via.placeholder.com/300x200" alt="Проєкт 4" />
+                <p>Лендінг для курсів</p>
+            </div>
+            <div class="work">
+                <img src="https://via.placeholder.com/300x200" alt="Проєкт 5" />
+                <p>Сайт-візитка</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:svetlana.lytvyn09@gmail.com">svetlana.lytvyn09@gmail.com</a></p>
+        <p>Telegram: <a href="https://t.me/Otrava09" target="_blank">@Otrava09</a></p>
+    </section>
+
+    <section id="blog" class="container">
+        <h2>Блог</h2>
+        <p>Незабаром тут з'являться корисні статті про веброзробку, дизайн, просування і роботу з клієнтами.</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Світлана Литвин. Всі права захищені.</p>
+    </footer>
+
 </body>
+
 </html>

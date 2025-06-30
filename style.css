@@ -1,77 +1,124 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f7f7f7;
-  color: #333;
-}
-
-.container {
-  width: 90%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header {
-  background-color: #282c34;
+  background-color: #F9B52B;
   color: #fff;
-  padding: 40px 0;
-  text-align: center;
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.subtitle {
-  font-size: 1.2rem;
-  color: #a0a0a0;
+.header-left {
+  flex: 1;
+  min-width: 300px;
 }
 
-.intro {
-  padding: 40px 0;
-  background: #fff;
+.header-left h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 900;
 }
 
-.intro h2 {
-  margin-bottom: 10px;
-  font-size: 1.8rem;
+.header-left p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #2e2e2e;
+  max-width: 400px;
 }
 
-.portfolio {
-  padding: 40px 0;
+.header-right img {
+  max-width: 300px;
+  border-radius: 10px;
 }
 
-.portfolio h2 {
+nav {
+  background-color: #f8b500;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.social {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.social a {
+  color: #333;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.container {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-size: 32px;
+  color: #333;
   margin-bottom: 20px;
-  font-size: 1.8rem;
 }
 
 .works {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .work {
-  background: #fff;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  text-align: center;
+  width: calc(33.333% - 20px);
 }
 
 .work img {
-  max-width: 100%;
-  border-radius: 6px;
+  width: 100%;
+  display: block;
+  border-radius: 8px;
 }
 
 footer {
-  background: #282c34;
-  color: #fff;
+  background-color: #f0f0f0;
+  padding: 40px 20px;
   text-align: center;
-  padding: 20px 0;
-  font-size: 0.9rem;
+}
+
+footer a {
+  color: #333;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .work {
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-right {
+    margin-top: 20px;
+  }
 }
