@@ -1,0 +1,89 @@
+/* --------------------HERO---------------- */
+
+#home {
+  background-image: url('../images/hero_desktop.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Паралакс */
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+  position: relative;
+  color: var(--text-light);
+  z-index: 1;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+
+.hero {
+display: flex;
+justify-content: end;
+padding-left: 40px;
+padding-right: 40px;
+pointer-events: none;
+}
+
+.home-left {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  flex: 1;
+  width: 41vw;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+
+.hero .subtitle {
+  color: rgb(49, 49, 49);
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 69px;
+  text-transform: uppercase;
+}
+
+.subtitle .highlight {
+  display: inline-block;
+  vertical-align: middle;  /* щоб лінія була на одному рівні з текстом */
+  width: 40px;             /* довжина лінії */
+  height: 2px;             /* товщина лінії */
+  background-color: rgb(49, 49, 49);
+  margin-right: 10px;      /* відступ від лінії до тексту */
+}
+
+.hero h1 {
+color: #FFFFFF;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 130px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 130px;
+    letter-spacing: 5px;
+    text-shadow: 4px 4px 0px #E9AD1F;
+}
+
+.home-left p {
+  margin-top: 20px;
+  color: #313131;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+}
+
+.home-right img {
+  max-width: 300px;
+  border-radius: 10px;
+}

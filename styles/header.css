@@ -1,0 +1,214 @@
+/* -------- HEADER -------- */
+
+.header {
+  background-color: #19191A;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15.3px;
+  font-weight: 500;
+  line-height: 1.4em;
+  letter-spacing: 0;
+
+  display: flex;                 /* Горизонтальне розміщення <p> */
+  align-items: center;           /* Вертикальне вирівнювання всіх <p> по центру */
+  justify-content: space-around; /* Рівномірний розподіл по ширині */
+
+  width: 100%;
+  min-height: 41px;
+  color: #f5f5f5;
+  padding: 0 10px;               /* Відступи з боків */
+}
+
+/* Вирівнювання іконки та тексту всередині <p> */
+.header p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  white-space: nowrap;
+  pointer-events: none;          /* Забороняємо події на <p>, щоб не блокувати інші */
+}
+
+.header p img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Контейнер для логотипу */
+.logo-block {
+  height: 100px;               /* Висота шапки */
+  display: flex;
+  justify-content: center;     /* Горизонтальне центрування */
+  align-items: center;         /* Вертикальне центрування */
+  overflow: visible;           
+  pointer-events: auto;        /* Блок реагує на події */
+  position: relative;          
+  z-index: 1;                 
+}
+
+/* Логотип */
+.logo {
+  width: 200px;                /* Ширина логотипу */
+  height: auto;                /* Збереження пропорцій */
+  max-height: 100%;            /* Не виходити за висоту контейнера */
+  filter: brightness(0) invert(1); /* Інверсія кольору (для білої версії) */
+  overflow: hidden;
+}
+
+
+/* -------- NAV -------- */
+
+.desktop_nav {
+  background-color: var(--main-yellow);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+  flex-wrap: wrap;
+  min-height: 102px;
+  width: 1170px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;             /* вага шрифту */
+  font-size: 14px;
+  line-height: 1.65em;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+
+.navigation {
+  background-color: var(--main-yellow);
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  border-color: #00000033;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+nav a {
+  color: #FFFFFF;              /* або var(--text-light) */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.65em;
+  letter-spacing: 0;
+  font-family: 'Montserrat', sans-serif;
+
+  transition: color 0.3s ease; /* Плавний перехід кольору */
+}
+
+nav a:hover,
+nav a:focus {
+  color: #19191A;
+}
+
+/* -------- SOCIAL -------- */
+
+a img {
+  transition: filter 0.3s ease;
+}
+
+a:hover img {
+  filter: brightness(0) saturate(100%);
+}
+
+.desktop_nav .social-line {
+  height: 24px;               /* Висота лінії - по центру меню */
+  width: 1px;
+  background-color: #f0f0f0;
+  margin: 0 15px;             /* Відступи з боків */
+}
+
+
+/* ------------------Adaptive------------ */
+
+@media (max-width: 1024px) {
+  /* Контейнер навігації - білий фон, чорний текст */
+  .navigation {
+    background-color: #ffffff;
+    color: #19191A;
+    border-color: transparent;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation nav {
+    gap: none;
+    min-height: 80px;
+  }
+
+  /* Посилання навігації чорні */
+  .navigation nav a {
+    color: #19191A;
+  }
+
+  .navigation nav a:hover,
+  .navigation nav a:focus {
+    color: var(--main-yellow, #FCC23A); /* Можна акцентом */
+  }
+
+  /* Лого чорне, вгорі, по центру */
+  .logo-block {
+    display: flex;
+    height: 100px;
+    order: -1;              /* Піднімаємо лого вище за інші блоки */
+  }
+
+  .logo {
+    filter: none;           /* прибираємо інверсію для чорного логотипу */
+    width: 150px;           /* менший розмір для мобільних */
+    max-height: none;
+    transition: scale 0.3s ease;
+  }
+
+  /* Весь блок навігації flex-колонка та центрований */
+  .desktop_nav {
+    /* flex-direction: column; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width: 100%;
+    gap: 10px;
+    padding-top: 0;
+  }
+
+
+
+  /* Іконки чорного кольору — якщо використовуються SVG, змінити fill, для img можна замінити файли */
+
+/* Базовий стиль іконок */
+.desktop_nav a img {
+  filter: grayscale(100%) brightness(0) invert(0);
+  transition: filter 0.3s ease;
+}
+
+/* При наведенні — жовтий відтінок */
+.desktop_nav .logo-block:hover img,
+.desktop_nav .logo-block:focus img {
+  filter: brightness(0) saturate(100%) invert(1); /* приклад: робить зображення інверсією */
+  transition: filter 0.3s ease;
+}
+
+.navigation .logo:hover,
+.navigation .logo:focus {
+  scale: 1.1;
+}
+
+/* Якщо є текст (для текстових посилань) */
+.desktop_nav a:hover,
+.desktop_nav a:focus {
+  color: var(--main-yellow, #FCC23A);
+}
+  
+}
+
