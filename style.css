@@ -4,13 +4,43 @@ body {
 }
 
 header {
-  background-color: #F9B52B;
+  background-color: #FCC23A;
   color: #fff;
   padding: 60px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+#home {
+  background-image: url('./images/hero_desktop.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Паралакс ефект */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white; /* Щоб текст був видимий */
+  padding: 60px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Опціонально — напівпрозорий фон для читабельності тексту */
+#home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  z-index: 0;
+}
+
+.header-left {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
 }
 
 .header-left {
@@ -37,12 +67,13 @@ header {
 }
 
 nav {
-  background-color: #f8b500;
+  background-color: #FCC23A;
   display: flex;
   justify-content: center;
   padding: 10px;
   gap: 20px;
   flex-wrap: wrap;
+  min-height: 102px;
 }
 
 nav a {
