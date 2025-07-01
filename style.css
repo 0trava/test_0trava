@@ -66,16 +66,17 @@ body {
   padding: 0;
 }
 
+/* --------------------HERO---------------- */
+
 #home {
   background-image: url('./images/hero_desktop.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed; /* Паралакс */
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
   padding: 60px 20px;
   position: relative;
@@ -90,62 +91,140 @@ body {
   z-index: 0;
 }
 
-.header-left {
+
+.hero {
+display: flex;
+justify-content: end;
+padding-left: 40px;
+padding-right: 40px;
+pointer-events: none;
+}
+
+.home-left {
   position: relative;
   z-index: 2;
   max-width: 700px;
   flex: 1;
-  min-width: 300px;
+  width: 41vw;
+  display: flex;
+  flex-direction: column;
+
 }
 
-.header-left h1 {
-  margin: 0;
-  font-size: 48px;
-  font-weight: 900;
+
+
+.hero .subtitle {
+  color: rgb(49, 49, 49);
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 69px;
+  text-transform: uppercase;
 }
 
-.header-left p {
+.subtitle .highlight {
+  display: inline-block;
+  vertical-align: middle;  /* щоб лінія була на одному рівні з текстом */
+  width: 40px;             /* довжина лінії */
+  height: 2px;             /* товщина лінії */
+  background-color: rgb(49, 49, 49);
+  margin-right: 10px;      /* відступ від лінії до тексту */
+}
+
+.hero h1 {
+color: #FFFFFF;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 130px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 130px;
+    letter-spacing: 5px;
+    text-shadow: 4px 4px 0px #E9AD1F;
+}
+
+.home-left p {
   margin-top: 20px;
-  font-size: 18px;
-  color: var(--text-dark);
-  max-width: 400px;
+  color: #313131;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
 }
 
-.header-right img {
+.home-right img {
   max-width: 300px;
   border-radius: 10px;
 }
 
 /* -------- NAV -------- */
-nav {
+.desktop_nav {
   background-color: var(--main-yellow);
   display: flex;
-  justify-content: center;
+  justify-content: end;
+  align-items: center;
   padding: 10px;
   gap: 20px;
   flex-wrap: wrap;
   min-height: 102px;
+  width: 1170px;
+
+font-family: 'Montserrat', sans-serif;
+font-weight: 100; /* thin */
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.65em;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+
+
+}
+
+
+
+.navigation {
+    background-color: var(--main-yellow);
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #00000033;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 nav a {
-  color: var(--text-light);
+  color: #FFFFFF; /* або var(--text-light) */
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 500; 
   font-size: 16px;
+  line-height: 1.65em;
+  letter-spacing: 0;
+  font-family: 'Montserrat', sans-serif;
+  
+  transition: color 0.3s ease; /* плавний перехід кольору */
+}
+
+nav a:hover,
+nav a:focus {
+  color: #19191A;
 }
 
 /* -------- SOCIAL -------- */
-.social {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  padding: 10px;
+a img {
+  transition: filter 0.3s ease;
 }
 
-.social a {
-  color: var(--accent-dark);
-  font-size: 20px;
-  text-decoration: none;
+a:hover img {
+  filter: brightness(0) saturate(100%);
+}
+
+.desktop_nav .social-line {
+  height: 24px; /* висота лінії - по центру меню */
+  width: 1px;
+  background-color: #f0f0f0;
+  margin: 0 15px; /* відступи з боків */
 }
 
 /* -------- LAYOUT -------- */
