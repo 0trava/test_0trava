@@ -1,0 +1,124 @@
+
+
+.about {
+    position: relative;
+
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0 40px;
+    
+}
+
+.about__img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    filter: brightness(1.3);
+    opacity: 0.9;
+}
+
+.about_container {
+    max-width: 1170px;
+     display: flex;
+    flex-direction: column;
+    justify-content: start;
+    z-index: 100;
+}
+
+
+
+.about__title {
+  color: #FFC437;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 69px;
+  text-transform: uppercase;
+}
+
+.about__title .highlight {
+  display: inline-block;
+  vertical-align: middle;  /* щоб лінія була на одному рівні з текстом */
+  width: 40px;             /* довжина лінії */
+  height: 2px;             /* товщина лінії */
+  background-color: #FFC437;
+  margin-right: 10px;      /* відступ від лінії до тексту */
+}
+
+.about__subtitle {
+    color: #313131;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.12em;
+    letter-spacing: 1.4px;
+}
+
+.about__text {
+    padding: 60px 55px 0px 100px;
+    max-width: 50vw;
+}
+
+.about__text p {
+    color: #313131;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7em;
+    letter-spacing: 0px;
+}
+
+
+/* Button */
+
+.about__btn {
+    color: #FFFFFF;
+    background-color: #FFC437;
+    width: 190px;
+    height: 60px;
+    padding: 10px 30px;
+    margin-top: 80px;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+
+    font-family: "Montserrat", Sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 20px;
+    letter-spacing: 5px;
+
+    box-shadow: 2px 2px 1px #E9AD1F;
+
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    transition: color 0.3s ease;
+}
+
+.about__btn::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: -1;
+    transition: top 0.4s ease-in-out;
+}
+
+.about__btn:hover::before {
+    top: 0;
+}
+
+.about__btn:hover {
+    color: #FFFFFF; /* або #FFFFFF — вибери, що більше подобається */
+}

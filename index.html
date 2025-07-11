@@ -2,146 +2,163 @@
 <html lang="uk">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simplesite</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simplesite</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap" rel="stylesheet" />
 
 
-    <!-- Favicon -->
-     <link rel="icon" href="./favicon-16x16.png" type="image/x-icon" />
+  <!-- Favicon -->
+  <link rel="icon" href="./favicon-16x16.png" type="image/x-icon" />
 
-    <!-- Style -->
-     <link rel="stylesheet" href="style.css" />
-     <link rel="stylesheet" href="./styles/hero.css" />
-     <link rel="stylesheet" href="./styles/header.css" />
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./styles/hero.css" />
+  <link rel="stylesheet" href="./styles/header.css" />
+  <link rel="stylesheet" href="./styles/about_me.css" />
 
-    
+
 </head>
 
 <body>
 
-<header class="header">
-  <p><span class="icon location"><img src="./images/icons/map-4-48.ico" alt="Location icon" width="17" height="17" /></span> Україна, 04203 м. Київ</p>
-  <p><span class="icon phone"><img src="./images/icons/phone-48.ico" alt="Phone icon" width="17" height="17" /></span> тел. +38 067 219 5940</p>
-  <p><span class="icon clock"><img src="./images/icons/clock-48.ico" alt="clock icon" width="17" height="17" /></span> Робочі години: Пн-Пт 9:00–20:00</p>
-</header>
+  <header class="header">
+    <p><span class="icon location"><img src="./images/icons/map-4-48.ico" alt="Location icon" width="17"
+          height="17" /></span> Україна, 04203 м. Київ</p>
+    <p><span class="icon phone"><img src="./images/icons/phone-48.ico" alt="Phone icon" width="17" height="17" /></span>
+      тел. +38 067 219 5940</p>
+    <p><span class="icon clock"><img src="./images/icons/clock-48.ico" alt="clock icon" width="17" height="17" /></span>
+      Робочі години: Пн-Пт 9:00–20:00</p>
+  </header>
 
 
 
-<div class="navigation">
-  <button class="burger" aria-label="Відкрити меню" aria-expanded="false" aria-controls="mobile-menu">
-    &#9776; <!-- бургер -->
-  </button>
+  <div class="navigation">
+    <button class="burger" aria-label="Відкрити меню" aria-expanded="false" aria-controls="mobile-menu">
+      &#9776; <!-- бургер -->
+    </button>
 
-  <div class="logo-block">
-    <a href="/"><img class="logo" src="./images/logomak_logo (1).png" alt="logo" height="100px"></a>
+    <div class="logo-block">
+      <a href="/"><img class="logo" src="./images/logomak_logo (1).png" alt="logo" height="100px"></a>
+    </div>
+
+    <nav class="desktop_nav" id="mobile-menu" aria-hidden="true">
+      <button class="close-menu" aria-label="Закрити меню">&times;</button>
+
+      <a href="#home">Головна</a>
+      <a href="#about">Про мене</a>
+      <a href="#portfolio">Портфоліо</a>
+      <a href="#contact">Контакти</a>
+      <a href="#blog">Блог</a>
+
+      <div class="social-line"></div>
+
+      <a href="https://t.me/Lytvyn_09" target="_blank" title="Telegram">
+        <img src="./images/icons/telegram-48.ico" alt="Telegram icon" width="16" height="16" />
+      </a>
+      <a href="viber://chat?number=%2B380672195940" class="icon viber" target="_blank" aria-label="Viber" title="Viber">
+        <img src="./images/icons/viber-4-48.ico" alt="Viber icon" width="16" height="16" />
+      </a>
+      <a href="https://www.linkedin.com/in/svetlanalytvyn/?locale=en_US" target="_blank" title="LinkedIn">
+        <img src="./images/icons/linkedin-6-48.ico" alt="LinkedIn icon" width="16" height="16" />
+      </a>
+    </nav>
   </div>
 
-  <nav class="desktop_nav" id="mobile-menu" aria-hidden="true">
-    <button class="close-menu" aria-label="Закрити меню">&times;</button>
-
-    <a href="#home">Головна</a>
-    <a href="#about">Про мене</a>
-    <a href="#portfolio">Портфоліо</a>
-    <a href="#contact">Контакти</a>
-    <a href="#blog">Блог</a>
-
-    <div class="social-line"></div>
-
-    <a href="https://t.me/Lytvyn_09" target="_blank" title="Telegram">
-      <img src="./images/icons/telegram-48.ico" alt="Telegram icon" width="16" height="16" />
-    </a>
-    <a href="viber://chat?number=%2B380672195940" class="icon viber" target="_blank" aria-label="Viber" title="Viber">
-      <img src="./images/icons/viber-4-48.ico" alt="Viber icon" width="16" height="16" />
-    </a>
-    <a href="https://www.linkedin.com/in/svetlanalytvyn/?locale=en_US" target="_blank" title="LinkedIn">
-      <img src="./images/icons/linkedin-6-48.ico" alt="LinkedIn icon" width="16" height="16" />
-    </a>
-  </nav>
-</div>
-
-<section id="home" class="hero">
-  <div class="home-left">
-    <p class="subtitle"><span class="highlight"></span>Знайду ваш стиль</p>
-    <h1 class="main-title">Сайта Візитки</h1>
-    <p class="description">
-      Створюю лендінги, які розкривають весь потенціал вашого бізнесу — від дизайну до публікації.
-      Простий лендінг, який підкреслить ваш бізнес і донесе інформацію про ваші послуги.
-    </p>
-  </div>
-</section>
+  <section id="home" class="hero">
+    <div class="home-left">
+      <p class="subtitle"><span class="highlight"></span>Знайду ваш стиль</p>
+      <h1 class="main-title">Сайта Візитки</h1>
+      <p class="description">
+        Створюю лендінги, які розкривають весь потенціал вашого бізнесу — від дизайну до публікації.
+        Простий лендінг, який підкреслить ваш бізнес і донесе інформацію про ваші послуги.
+      </p>
+    </div>
+  </section>
 
 
+  <!-- ABOUT ME -->
 
-    <section id="about" class="intro container">
-        <h2>Про мене</h2>
+  <section id="about" class="about">
+    <img class="about__img" src="./images/about_me.jpg" alt="0trava_about_me">
+    <div class="about_container">
+      <h2 class="about__title"><span class="highlight"></span>Про мене</h2>
+      <h3 class="about__subtitle">Професіний WEB-розробник </h3>
+      <div class="about__text">
         <p>Мене звати Світлана, я створюю адаптивні, легкі та сучасні сайти — від простих візиток до лендінгів для
-            послуг і товарів.</p>
+          послуг і товарів.</p>
         <p>Працюю швидко, допомагаю з дизайном, текстами й наповненням. Якщо вам дорого платити 14 000 грн за лендінг —
-            я можу зробити простий і якісний варіант за 4000–5000 грн.</p>
+          я можу зробити простий і якісний варіант за 4000–5000 грн.</p>
         <p>Я відкрито спілкуюся, завжди на зв’язку, дотримуюсь дедлайнів і не ускладнюю там, де можна просто.</p>
-    </section>
-
-    <section class="experience container">
-        <h2>Experience</h2>
-        <h3>Previous associations that helped to gather experience</h3>
-        <ul>
-            <li>GOIT Full Stack Developer курс (2022–2023)</li>
-            <li>Фріланс: сайти-візитки, лендінги, SEO, контент, оформлення</li>
-            <li>HTML5, CSS3, адаптивна верстка, WebP/SVG</li>
-            <li>WordPress, Tilda, Figma, Photoshop, SketchUp</li>
-        </ul>
-    </section>
-
-    <section id="portfolio" class="portfolio container">
-        <h2>Portfolio</h2>
-        <div class="works">
-            <div class="work">
-                <img src="https://via.placeholder.com/300x200" alt="Проєкт 1" />
-                <p>Сайт ресторану</p>
-            </div>
-            <div class="work">
-                <img src="https://via.placeholder.com/300x200" alt="Проєкт 2" />
-                <p>Інтернет-магазин</p>
-            </div>
-            <div class="work">
-                <img src="https://via.placeholder.com/300x200" alt="Проєкт 3" />
-                <p>Особистий блог</p>
-            </div>
-            <div class="work">
-                <img src="https://via.placeholder.com/300x200" alt="Проєкт 4" />
-                <p>Лендінг для курсів</p>
-            </div>
-            <div class="work">
-                <img src="https://via.placeholder.com/300x200" alt="Проєкт 5" />
-                <p>Сайт-візитка</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="container">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:svetlana.lytvyn09@gmail.com">svetlana.lytvyn09@gmail.com</a></p>
-        <p>Telegram: <a href="https://t.me/Lytvyn_09" target="_blank">@Lytvyn_09</a></p>
-    </section>
-
-    <section id="blog" class="container">
-        <h2>Блог</h2>
-        <p>Незабаром тут з'являться корисні статті про веброзробку, дизайн, просування і роботу з клієнтами.</p>
-    </section>
-
-    <footer>
-        <p>© 2025 made by 0trava. Всі права захищені.</p>
-    </footer>
+      </div>
+      <button class="about__btn">Більше</button>
+    </div>
+  </section>
 
 
-    <!-- Scripts -->
-     <script src="./js/burger-menu.js" defer></script>
+
+
+
+  <section class="experience container">
+    <h2 class="experience__title">Experience</h2>
+    <h3 class="experience__subtitle">Previous associations that helped to gather experience</h3>
+    <ul>
+      <li>GOIT Full Stack Developer курс (2022–2023)</li>
+      <li>Фріланс: сайти-візитки, лендінги, SEO, контент, оформлення</li>
+      <li>HTML5, CSS3, адаптивна верстка, WebP/SVG</li>
+      <li>WordPress, Tilda, Figma, Photoshop, SketchUp</li>
+    </ul>
+
+  </section>
+
+  <section id="portfolio" class="portfolio container">
+    <h2>Portfolio</h2>
+    <div class="works">
+      <div class="work">
+        <img src="https://via.placeholder.com/300x200" alt="Проєкт 1" />
+        <p>Сайт ресторану</p>
+      </div>
+      <div class="work">
+        <img src="https://via.placeholder.com/300x200" alt="Проєкт 2" />
+        <p>Інтернет-магазин</p>
+      </div>
+      <div class="work">
+        <img src="https://via.placeholder.com/300x200" alt="Проєкт 3" />
+        <p>Особистий блог</p>
+      </div>
+      <div class="work">
+        <img src="https://via.placeholder.com/300x200" alt="Проєкт 4" />
+        <p>Лендінг для курсів</p>
+      </div>
+      <div class="work">
+        <img src="https://via.placeholder.com/300x200" alt="Проєкт 5" />
+        <p>Сайт-візитка</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:svetlana.lytvyn09@gmail.com">svetlana.lytvyn09@gmail.com</a></p>
+    <p>Telegram: <a href="https://t.me/Lytvyn_09" target="_blank">@Lytvyn_09</a></p>
+  </section>
+
+  <section id="blog" class="container">
+    <h2>Блог</h2>
+    <p>Незабаром тут з'являться корисні статті про веброзробку, дизайн, просування і роботу з клієнтами.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 made by 0trava. Всі права захищені.</p>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="./js/burger-menu.js" defer></script>
 </body>
 
 </html>
