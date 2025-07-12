@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="./styles/hero.css" />
   <link rel="stylesheet" href="./styles/header.css" />
   <link rel="stylesheet" href="./styles/about_me.css" />
+  <link rel="stylesheet" href="./styles/reviews.css" />
 
 
 </head>
@@ -103,7 +104,7 @@
 
 
 
-  <section class="experience container">
+  <!-- <section class="experience container">
     <h2 class="experience__title">Experience</h2>
     <h3 class="experience__subtitle">Previous associations that helped to gather experience</h3>
     <ul>
@@ -113,10 +114,55 @@
       <li>WordPress, Tilda, Figma, Photoshop, SketchUp</li>
     </ul>
 
-  </section>
+  </section> -->
+
+
+
+
+  <!-- Reviews -->
+
+<section class="reviews container">
+  <h2 class="reviews__title">Відгуки клієнтів</h2>
+  <p class="reviews__subtitle">Що кажуть про нашу роботу</p>
+
+  <div class="reviews__carousel">
+    <div class="reviews__track">
+
+      <div class="review">
+        <img src="img/client1.jpg" alt="Фото клієнта" class="review__photo">
+        <div class="review__content">
+          <p class="review__text">Дуже задоволена співпрацею! Все якісно, швидко і з душею.</p>
+          <div class="review__info">
+            <span class="review__name">Ольга Коваль</span>
+            <span class="review__date">10 липня 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review">
+        <img src="img/client2.jpg" alt="Фото клієнта" class="review__photo">
+        <div class="review__content">
+          <p class="review__text">Сайт вийшов саме таким, як я хотіла! Дякую за увагу до деталей.</p>
+          <div class="review__info">
+            <span class="review__name">Ірина Литвин</span>
+            <span class="review__date">2 липня 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- більше відгуків... -->
+    </div>
+
+    <div class="reviews__arrows">
+      <button class="arrow arrow--prev">&#8592;</button>
+      <button class="arrow arrow--next">&#8594;</button>
+    </div>
+  </div>
+</section>
 
   <section id="portfolio" class="portfolio container">
     <h2>Portfolio</h2>
+
     <div class="works">
       <div class="work">
         <img src="https://via.placeholder.com/300x200" alt="Проєкт 1" />
@@ -159,6 +205,7 @@
 
   <!-- Scripts -->
   <script src="./js/burger-menu.js" defer></script>
+  <script src="./js/reviews-carousel.js" defer></script>
 </body>
 
 </html>

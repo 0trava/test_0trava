@@ -37,6 +37,7 @@
   font-weight: 800;
   line-height: 69px;
   text-transform: uppercase;
+  pointer-events: none;
 }
 
 .about__title .highlight {
@@ -56,11 +57,13 @@
     text-transform: uppercase;
     line-height: 1.12em;
     letter-spacing: 1.4px;
+    pointer-events: none;
 }
 
 .about__text {
     padding: 60px 55px 0px 100px;
     max-width: 50vw;
+    pointer-events: none;
 }
 
 .about__text p {
@@ -70,6 +73,7 @@
     font-weight: 400;
     line-height: 1.7em;
     letter-spacing: 0px;
+    pointer-events: none;
 }
 
 
@@ -87,6 +91,7 @@
     align-items: center;
     justify-content: center;
     border: none;
+    cursor: pointer;
 
     font-family: "Montserrat", Sans-serif;
     font-size: 14px;
