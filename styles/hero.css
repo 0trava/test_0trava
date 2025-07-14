@@ -1,7 +1,7 @@
 /* --------------------HERO---------------- */
 
 #home {
-  background-image: url('../images/hero_desktop.jpg');
+  background-image: url('../images/hero_desktop_2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,14 +63,14 @@ pointer-events: none;
 }
 
 .hero h1 {
-color: #FFFFFF;
+color: #FFC437;
     font-family: "Montserrat", Sans-serif;
     font-size: 130px;
     font-weight: 800;
     text-transform: uppercase;
     line-height: 130px;
     letter-spacing: 5px;
-    text-shadow: 4px 4px 0px #E9AD1F;
+    text-shadow: 4px 4px 0px #969696;
 }
 
 .home-left p {
