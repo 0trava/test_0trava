@@ -23,13 +23,13 @@
   z-index: 0;
 }
 
-
 .hero {
-display: flex;
-justify-content: end;
-padding-left: 40px;
-padding-right: 40px;
-pointer-events: none;
+  display: flex;
+  justify-content: end;
+  padding-left: 40px;
+  padding-right: 40px;
+  pointer-events: none;
+  flex-wrap: wrap;
 }
 
 .home-left {
@@ -40,10 +40,8 @@ pointer-events: none;
   width: 41vw;
   display: flex;
   flex-direction: column;
-
+  pointer-events: auto;
 }
-
-
 
 .hero .subtitle {
   color: rgb(49, 49, 49);
@@ -55,35 +53,114 @@ pointer-events: none;
 
 .subtitle .highlight {
   display: inline-block;
-  vertical-align: middle;  /* щоб лінія була на одному рівні з текстом */
-  width: 40px;             /* довжина лінії */
-  height: 2px;             /* товщина лінії */
+  vertical-align: middle;
+  width: 40px;
+  height: 2px;
   background-color: rgb(49, 49, 49);
-  margin-right: 10px;      /* відступ від лінії до тексту */
+  margin-right: 10px;
 }
 
 .hero h1 {
-color: #FFC437;
-    font-family: "Montserrat", Sans-serif;
-    font-size: 130px;
-    font-weight: 800;
-    text-transform: uppercase;
-    line-height: 130px;
-    letter-spacing: 5px;
-    text-shadow: 4px 4px 0px #969696;
+  color: #FFC437;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 130px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 130px;
+  letter-spacing: 5px;
+  text-shadow: 4px 4px 0px #969696;
 }
 
 .home-left p {
   margin-top: 20px;
   color: #313131;
-    font-family: "Montserrat", Sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0px;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
 }
 
 .home-right img {
   max-width: 300px;
   border-radius: 10px;
+}
+
+/* --------------------ADAPTIVE---------------- */
+
+/* Планшети */
+@media (max-width: 991px) {
+  .hero {
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  .home-left {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero .subtitle {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  .hero h1 {
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 0px #969696;
+  }
+
+  .home-left p {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .home-right img {
+    max-width: 250px;
+    margin-top: 30px;
+  }
+}
+
+/* Мобільні */
+@media (max-width: 576px) {
+  #home {
+    padding: 40px 15px;
+    background-attachment: scroll; /* на мобільних паралакс часто не працює */
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .home-left {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero .subtitle {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .hero h1 {
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 0px #969696;
+  }
+
+  .home-left p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .home-right img {
+    max-width: 200px;
+    margin-top: 20px;
+  }
 }
