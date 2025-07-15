@@ -221,7 +221,7 @@ a:hover img {
   background: none;
   border: none;
   cursor: pointer;
-  color: #fff;
+  color: #030303;
   padding: 10px;
   z-index: 1001;
   user-select: none;
@@ -243,8 +243,18 @@ a:hover img {
 }
 
 @media (max-width: 630px) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+  }
+
   .burger {
     display: block;
+    order: 3;
+    z-index: 1100;
   }
 
   .desktop_nav {
@@ -254,7 +264,7 @@ a:hover img {
     top: 0; left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #fff;
+    background-color: #a72b2b;
     color: #19191A;
     padding-top: 100px;
     align-items: center;
@@ -267,7 +277,6 @@ a:hover img {
     display: flex;
   }
 
-  /* Показать крестик при открытом меню */
   .desktop_nav.active .close-menu {
     display: block;
   }
@@ -283,39 +292,8 @@ a:hover img {
     color: var(--main-yellow, #FCC23A);
   }
 
-  /* Социальные иконки в ряд */
-  .desktop_nav .social-line {
-    display: none;
-  }
+  /* Навігаційний хедер */
 
-  .desktop_nav a img {
-    filter: none;
-    width: 32px;
-    height: 32px;
-    transition: filter 0.3s ease;
-  }
-
-  .desktop_nav a:hover img,
-  .desktop_nav a:focus img {
-    filter: brightness(0) saturate(100%) invert(1);
-  }
-
-  .navigation {
-    position: relative;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    background-color: var(--main-yellow, #FCC23A);
-    justify-content: flex-start;
-    gap: 15px;
-  }
-
-  .logo-block {
-    order: 2;
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-  }
 }
+
 
