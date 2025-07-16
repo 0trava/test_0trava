@@ -81,7 +81,7 @@
 }
 
 .navigation {
-  background-color: transparent;
+  background-color: #fec00d;
   border-style: solid;
   border-width: 0 0 1px 0;
   border-color: #00000033;
@@ -95,7 +95,7 @@
 }
 
 nav a {
-  color:#000000da;           /* або var(--text-light) */
+  color:var(--text-light) ;           /* або var(--text-light) */
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
@@ -108,18 +108,18 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-  color: #535353c7;
+  color: #000000da;
 }
 
 /* -------- SOCIAL -------- */
 
 a img {
   transition: filter 0.3s ease;
-  filter: brightness(0) saturate(100%);
+filter: brightness(100%) saturate(50%);
 }
 
 a:hover img {
-  filter: brightness(50%) saturate(50%);
+  filter: brightness(0) saturate(100%);
 }
 
 .desktop_nav .social-line {
