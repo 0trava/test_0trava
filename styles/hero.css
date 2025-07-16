@@ -82,7 +82,7 @@
   line-height: 30px;
   letter-spacing: 0px;
   pointer-events: none;
-  
+
 }
 
 .home-right img {
@@ -94,15 +94,28 @@
 
 /* Планшети */
 @media (max-width: 991px) {
+  #home {
+  min-height: 70vh;
+  padding-right: 40px;
+  padding-left: 40px;
+  justify-content: right;
+
+    display: flex;
+  flex-wrap: wrap; /* або wrap-reverse */
+      
+
+}
+
   .hero {
     justify-content: center;
-    padding: 40px 20px;
+    /* padding: 40px 20px; */
   }
 
   .home-left {
-    width: 100%;
-    text-align: center;
-    align-items: center;
+    display: flex;
+    width: 60vw;
+    text-align: right;
+      flex: 0 0 auto;
   }
 
   .hero .subtitle {
