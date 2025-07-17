@@ -1,0 +1,89 @@
+.experience {
+  position: relative;
+  padding: 60px 20px;
+}
+
+.experience__title,
+.experience__subtitle {
+  text-align: center;
+}
+
+.experience__list {
+  position: relative;
+  margin: 60px auto;
+  padding: 0;
+  list-style: none;
+  max-width: 900px;
+}
+
+.experience__list::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: rgb(49, 49, 49);
+  transform: translateX(-50%);
+}
+
+.experience__item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  color: #000000da;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+.experience__item:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+.experience__item:nth-child(even) {
+  left: 50%;
+  text-align: left;
+}
+
+.experience__item::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  width: 12px;
+  height: 12px;
+  background-color: rgb(49, 49, 49);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.experience__item:nth-child(odd)::before {
+  right: -6px;
+}
+
+.experience__item:nth-child(even)::before {
+  left: -6px;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .experience__item,
+  .experience__item:nth-child(even),
+  .experience__item:nth-child(odd) {
+    width: 100%;
+    left: 0;
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+
+  .experience__item::before {
+    left: 0;
+  }
+
+  .experience__list::before {
+    left: 20px;
+  }
+}
