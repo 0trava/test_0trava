@@ -140,11 +140,12 @@ a:hover img {
     border-color: transparent;
     flex-direction: column;
     align-items: center;
+    max-height: 200px;
   }
 
   .navigation nav {
     gap: none;
-    min-height: 80px;
+    /* min-height: 80px; */
   }
 
   /* Посилання навігації чорні */
@@ -181,6 +182,7 @@ a:hover img {
     width: 100%;
     gap: 10px;
     padding-top: 0;
+    height: 80px;
   }
 
 
