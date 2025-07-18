@@ -109,10 +109,59 @@
 }
 
 /* Адаптив до 1140px */
-@media (max-width: 1140px) {
+
+@media (max-width: 1200px) {
+.blog__item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 250px;
+  height: 300px;
+}
+}
+
+@media (max-width: 800px) {
   .blog__articles {
     grid-template-columns: 1fr;
-    justify-items: center; /* Центрування карточок */
+    justify-items: center; 
+
+  }
+
+  .blog_container {
+    height: auto;
+  }
+
+  .blog__item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 80vw;
+  height: 300px;
+}
+}
+
+@media (max-width: 600px) {
+  .blog_container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .blog_title-block {
+    width: 100%;
+    text-align: center;
+  }
+
+  .blog__item {
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+  }
+
+  .blog__item img {
+    height: auto;
+    object-fit: cover;
   }
 }
 

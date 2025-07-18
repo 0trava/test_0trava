@@ -149,8 +149,13 @@
 }
 
 /* Ефекти при наведенні */
-.portfolio .work:hover img {
+.portfolio .work img {
   transform: scale(1.05);
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Щоб зображення повністю заповнювало блок */
+  display: block;
+  border-radius: 10px;
 }
 
 .portfolio .work:hover::before,

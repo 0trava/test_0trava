@@ -88,3 +88,21 @@ filter: brightness(300%) saturate(0) contrast(150%);
 .footer__social-link:hover img {
   filter: brightness(0) invert(0); /* робимо чорними */
 }
+
+/* Адаптивність для екранів менше 600px */
+@media (max-width: 600px) {
+  .footer {
+    padding: 20px 20px;
+  }
+
+  .footer__top,
+  .footer__bottom  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+}
