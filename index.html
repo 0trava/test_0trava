@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="./styles/about_me.css" />
   <link rel="stylesheet" href="./styles/reviews.css" />
   <link rel="stylesheet" href="./styles/experience.css" />
+  <link rel="stylesheet" href="./styles/portfolio.css" />
 
 
 </head>
@@ -38,10 +39,10 @@
   </header>
 
 
-<!-- бургер -->
+  <!-- бургер -->
   <div class="navigation">
     <button class="burger" aria-label="Відкрити меню" aria-expanded="false" aria-controls="mobile-menu">
-      &#9776; 
+      &#9776;
     </button>
 
     <div class="logo-block">
@@ -73,7 +74,7 @@
 
 
 
-   <!-- HERO -->
+  <!-- HERO -->
 
   <section id="home" class="hero">
     <div class="home-left">
@@ -109,98 +110,131 @@
 
   <!-- experience -->
 
-<section class="experience container">
-  <h3 class="experience__subtitle">Шлях до професії</h3>
-  <ul class="experience__list">
-    <li class="experience__item">2000 — вивчення основ Photoshop та SEO-просування</li>
-    <li class="experience__item">2022–2023 — курс Full Stack Developer, GOIT</li>
-    <li class="experience__item">2024 — освоєння WordPress, Tilda</li>
-    <li class="experience__item">Фріланс: сайти-візитки, лендінги, SEO, контент, оформлення</li>
-    <li class="experience__item">HTML5, CSS3, адаптивна верстка, WebP/SVG</li>
-    <li class="experience__item">Figma, Photoshop, SketchUp</li>
-  </ul>
-</section>
+  <section class="experience container">
+    <h3 class="experience__subtitle">Шлях до професії</h3>
+    <ul class="experience__list">
+      <li class="experience__item">2000 — вивчення основ Photoshop та SEO-просування</li>
+      <li class="experience__item">2022–2023 — курс Full Stack Developer, GOIT</li>
+      <li class="experience__item">2024 — освоєння WordPress, Tilda</li>
+      <li class="experience__item">Фріланс: сайти-візитки, лендінги, SEO, контент, оформлення</li>
+      <li class="experience__item">HTML5, CSS3, адаптивна верстка, WebP/SVG</li>
+      <li class="experience__item">Figma, Photoshop, SketchUp</li>
+    </ul>
+  </section>
 
 
 
 
   <!-- Reviews -->
 
-<section class="reviews">
-  <div class="reviews_container">
-  <h2 class="reviews__title">Відгуки клієнтів</h2>
-  <p class="reviews__subtitle">Що кажуть про нашу роботу</p>
+  <section class="reviews">
+    <div class="reviews_container">
+      <h2 class="reviews__title"><span class="highlight"></span>Відгуки</h2>
+      <p class="reviews__subtitle">Я люблю своїх клієнтів</p>
 
-  <div class="reviews__carousel">
-    <div class="reviews__track">
+      <div class="reviews__carousel">
+        <div class="reviews__track">
 
-      <div class="review">
-        <img src="img/client1.jpg" alt="Фото клієнта" class="review__photo">
-        <div class="review__content">
-          <p class="review__text">Дуже задоволена співпрацею! Все якісно, швидко і з душею.</p>
-          <div class="review__info">
-            <span class="review__name">Ольга Коваль</span>
-            <span class="review__date">10 липня 2025</span>
+          <div class="review">
+            <img src="./images/review_olga.JPG" alt="Фото клієнта" class="review__photo">
+            <div class="review__content">
+              <p class="review__text">
+                Дуже задоволена співпрацею! Все якісно, швидко і з душею. Особливо сподобалося, що врахували всі мої
+                побажання до дизайну та функціоналу. Команда постійно була на зв’язку, допомагала з порадами і справді
+                переймалась результатом. Рекомендую всім, хто цінує професіоналізм і людяність!
+              </p>
+              <div class="review__info">
+                <span class="review__name">Ольга Коваль</span>
+                <span class="review__date">10 липня 2022</span>
+              </div>
+            </div>
           </div>
+
+          <div class="review">
+            <img src="./images/review_irina.JPG" alt="Фото клієнта" class="review__photo">
+            <div class="review__content">
+              <p class="review__text">
+                Сайт вийшов саме таким, як я хотіла! Дякую за увагу до деталей, терпляче ставлення до моїх правок і
+                своєчасне виконання кожного етапу. Навіть після завершення проєкту мені допомогли з консультацією, коли
+                виникли запитання. Це рідкість, і я це дуже ціную.
+              </p>
+              <div class="review__info">
+                <span class="review__name">Ірина Литвин</span>
+                <span class="review__date">2 липня 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review">
+            <img src="./images/review_ura.JPG" alt="Фото клієнта" class="review__photo">
+            <div class="review__content">
+              <p class="review__text">
+                Працювати було легко та приємно! Відразу видно, що людина на своєму місці: технічно підкована,
+                організована і не боїться складних завдань. Моє замовлення реалізували швидше, ніж я очікував, ще й
+                підказали кілька рішень, які зробили сайт зручнішим для клієнтів. Дякую за роботу!
+              </p>
+              <div class="review__info">
+                <span class="review__name">Юрій Лагута</span>
+                <span class="review__date">5 червня 2023</span>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <div class="reviews__arrows">
+          <button class="arrow arrow--prev"></button>
+          <button class="arrow arrow--next"></button>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="review">
-        <img src="img/client2.jpg" alt="Фото клієнта" class="review__photo">
-        <div class="review__content">
-          <p class="review__text">Сайт вийшов саме таким, як я хотіла! Дякую за увагу до деталей.</p>
-          <div class="review__info">
-            <span class="review__name">Ірина Литвин</span>
-            <span class="review__date">2 липня 2025</span>
-          </div>
+
+
+  <!-- portfolio -->
+
+
+  <section id="portfolio" class="portfolio container">
+    <h2 class="portfolio__title"><span class="highlight"></span>ПОРТФОЛІО</h2>
+    <p class="portfolio__subtitle">Мої останні роботи</p>
+
+    <ul class="works">
+      <li class="work">
+        <img src="./images/portfolio_1.png" alt="Сайт візитка" />
+        <div class="work__overlay">
+          <p>Сайт-візитка з атмосферним дизайном для презентації бренду</p>
+          <a href="https://0trava.github.io/Beautiful-World/" class="btn">Подивитись</a>
         </div>
-      </div>
+      </li>
+      <li class="work">
+        <img src="./images/portfolio_3.JPG" alt="Сайт сонячні системи" />
+        <div class="work__overlay">
+          <p>Сайт для компанії з встановлення сонячних електростанцій</p>
+          <a href="https://0trava.github.io/PromSys_SunPower/" class="btn">Подивитись</a>
+        </div>
+      </li>
+      <li class="work">
+        <img src="./images/portfolio_2.png" alt="Сайт магазин" />
+        <div class="work__overlay">
+          <p>Інтернет-магазин із продажу кухонного посуду</p>
+          <a href="https://0trava.github.io/PROJECT-portfolio-Our_Place/" class="btn">Подивитись</a>
+        </div>
+      </li>
+      <li class="work">
+        <img src="./images/portfolio_4.png" alt="Сайт доставка кульок" />
+        <div class="work__overlay">
+          <p>Сайт для компанії з доставки святкових гелійових кульок</p>
+          <a href="https://0trava.github.io/CONFETTI/" class="btn">Подивитись</a>
+        </div>
+      </li>
+    </ul>
+  </section>
 
 
-    </div>
-
-    <div class="reviews__arrows">
-      <button class="arrow arrow--prev">&#8592;</button>
-      <button class="arrow arrow--next">&#8594;</button>
-    </div>
-  </div>
-  </div>
-</section>
-
-
-
- <!-- portfolio -->
-
-
-  <!-- <section id="portfolio" class="portfolio container">
-    <h2>Portfolio</h2>
-
-    <div class="works">
-      <div class="work">
-        <img src="https://via.placeholder.com/300x200" alt="Проєкт 1" />
-        <p>Сайт ресторану</p>
-      </div>
-      <div class="work">
-        <img src="https://via.placeholder.com/300x200" alt="Проєкт 2" />
-        <p>Інтернет-магазин</p>
-      </div>
-      <div class="work">
-        <img src="https://via.placeholder.com/300x200" alt="Проєкт 3" />
-        <p>Особистий блог</p>
-      </div>
-      <div class="work">
-        <img src="https://via.placeholder.com/300x200" alt="Проєкт 4" />
-        <p>Лендінг для курсів</p>
-      </div>
-      <div class="work">
-        <img src="https://via.placeholder.com/300x200" alt="Проєкт 5" />
-        <p>Сайт-візитка</p>
-      </div>
-    </div>
-  </section> -->
-
-
- <!-- contact -->
+  <!-- contact -->
 
   <!-- <section id="contact" class="container">
     <h2>Contact Me</h2>
