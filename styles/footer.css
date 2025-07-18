@@ -1,0 +1,90 @@
+.footer {
+  background-color: #161616;
+  color: #fff;
+  padding: 20px 80px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Верхня частина футера */
+.footer__top {
+  display: flex;
+  justify-content: space-between; /* елементи розтягнуті по лівому і правому краю */
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #333; /* нижня лінія на весь блок */
+}
+
+/* Логотип */
+.footer__logo-block {
+  /* Можна додати відступи або ширину, якщо потрібно */
+}
+
+.footer__logo-link {
+  display: inline-block;
+}
+
+.footer__logo-img {
+  display: block;
+  max-height: 100px;
+  height: auto;
+  width: auto;
+filter: brightness(300%) saturate(0) contrast(150%);
+}
+
+/* Навігація */
+.footer__nav {
+  display: flex;
+  gap: 30px;
+}
+
+.footer__nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer__nav-link:hover {
+  color: #FFC437; /* акцентний колір при наведенні */
+}
+
+/* Нижня частина футера */
+.footer__bottom {
+  display: flex;
+  justify-content: space-between; /* елементи на лівому і правому краю */
+  align-items: center;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* Посилання автора */
+.footer__author-link {
+  color: #FFC437;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer__author-link:hover {
+  text-decoration: underline;
+}
+
+/* Соціальні іконки */
+.footer__socials {
+  display: flex;
+  gap: 15px;
+}
+
+.footer__social-link img {
+  display: block;
+  width: 16px;
+  height: 16px;
+  filter: brightness(0) invert(1); /* іконки білі */
+  transition: filter 0.3s ease; /* трохи довше для плавності */
+}
+
+.footer__social-link:hover img {
+  filter: brightness(0) invert(0); /* робимо чорними */
+}
