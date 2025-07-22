@@ -135,7 +135,6 @@
   font-weight: 500;
 }
 
-/* Сірий напівпрозорий фон */
 .portfolio .work::before {
   content: '';
   position: absolute;
