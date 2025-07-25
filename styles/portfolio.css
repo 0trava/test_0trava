@@ -179,7 +179,7 @@
 
 @media (max-width: 768px) {
   .portfolio .works {
-    grid-template-columns: 1fr; /* 1 колонка на планшетах */
+    grid-template-columns: 1fr;
   }
 
       .portfolio__subtitle {
