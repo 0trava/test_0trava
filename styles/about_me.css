@@ -45,10 +45,10 @@
 .about__title .highlight {
   display: inline-block;
   vertical-align: middle;  /* щоб лінія була на одному рівні з текстом */
-  width: 40px;             /* довжина лінії */
-  height: 2px;             /* товщина лінії */
+  width: 40px;             
+  height: 2px;            
   background-color: #FFC437;
-  margin-right: 10px;      /* відступ від лінії до тексту */
+  margin-right: 10px;     
 }
 
 .about__subtitle {
