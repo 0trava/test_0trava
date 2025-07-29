@@ -44,7 +44,7 @@
 
 .about__title .highlight {
   display: inline-block;
-  vertical-align: middle;  /* щоб лінія була на одному рівні з текстом */
+  vertical-align: middle;  
   width: 40px;             
   height: 2px;            
   background-color: #FFC437;
