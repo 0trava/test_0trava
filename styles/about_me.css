@@ -127,7 +127,7 @@
 }
 
 .about__btn:hover {
-    color: #FFFFFF; /* або #FFFFFF — вибери, що більше подобається */
+    color: #FFFFFF; 
 }
 @media (max-width: 1200px) {
     .about__text {
