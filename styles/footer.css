@@ -81,12 +81,12 @@ filter: brightness(300%) saturate(0) contrast(150%);
   display: block;
   width: 16px;
   height: 16px;
-  filter: brightness(0) invert(1); /* іконки білі */
-  transition: filter 0.3s ease; /* трохи довше для плавності */
+  filter: brightness(0) invert(1); 
+  transition: filter 0.3s ease; 
 }
 
 .footer__social-link:hover img {
-  filter: brightness(0) invert(0); /* робимо чорними */
+  filter: brightness(0) invert(0); 
 }
 
 /* Адаптивність для екранів менше 600px */
