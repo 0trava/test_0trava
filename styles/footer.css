@@ -47,7 +47,7 @@ filter: brightness(300%) saturate(0) contrast(150%);
 }
 
 .footer__nav-link:hover {
-  color: #FFC437; /* акцентний колір при наведенні */
+  color: #FFC437; 
 }
 
 /* Нижня частина футера */
