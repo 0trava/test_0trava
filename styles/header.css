@@ -133,7 +133,7 @@ a:hover img {
 /* ------------------Adaptive------------ */
 
 @media (max-width: 1024px) {
-  /* Контейнер навігації - білий фон, чорний текст */
+
   .navigation {
     background-color: #ffffff;
     color: #19191A;
@@ -162,12 +162,12 @@ a:hover img {
   .logo-block {
     display: flex;
     height: 100px;
-    order: -1;              /* Піднімаємо лого вище за інші блоки */
+    order: -1;            
   }
 
   .logo {
     filter: none;           /* прибираємо інверсію для чорного логотипу */
-    width: 150px;           /* менший розмір для мобільних */
+    width: 150px;           
     max-height: none;
     transition: scale 0.3s ease;
   }
