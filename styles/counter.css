@@ -1,0 +1,46 @@
+.counter-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #FCC23A;
+  padding: 40px 20px;
+}
+
+.counter-box {
+  text-align: center;
+  margin: 20px;
+  min-width: 150px;
+}
+
+.elementor-counter-number {
+    position: relative;
+    color: #313131;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 48px;
+    letter-spacing: 1px;
+}
+
+.elementor-counter-number::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: aliceblue;
+}
+
+.elementor-counter-title {
+color: #313131;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 64px;
+    letter-spacing: 3px;
+}
