@@ -198,7 +198,7 @@ a:hover img {
 /* При наведенні — жовтий відтінок */
 .desktop_nav .logo-block:hover img,
 .desktop_nav .logo-block:focus img {
-  filter: brightness(0) saturate(100%) invert(1); /* приклад: робить зображення інверсією */
+  filter: brightness(0) saturate(100%) invert(1); 
   transition: filter 0.3s ease;
 }
 
