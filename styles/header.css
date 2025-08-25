@@ -166,7 +166,7 @@ a:hover img {
   }
 
   .logo {
-    filter: none;           /* прибираємо інверсію для чорного логотипу */
+    filter: none;       
     width: 150px;           
     max-height: none;
     transition: scale 0.3s ease;
