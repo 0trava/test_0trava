@@ -155,7 +155,7 @@ a:hover img {
 
   .navigation nav a:hover,
   .navigation nav a:focus {
-    color: var(--main-yellow, #FCC23A); /* Можна акцентом */
+    color: var(--main-yellow, #FCC23A); 
   }
 
   /* Лого чорне, вгорі, по центру */
