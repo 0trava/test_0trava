@@ -95,7 +95,7 @@
 }
 
 nav a {
-  color:var(--text-light) ;           /* або var(--text-light) */
+  color:var(--text-light) ;         
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
@@ -123,7 +123,7 @@ a:hover img {
 }
 
 .desktop_nav .social-line {
-  height: 24px;               /* Висота лінії - по центру меню */
+  height: 24px;             
   width: 1px;
   background-color: #000000da;
   margin: 0 15px;           
