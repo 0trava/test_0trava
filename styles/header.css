@@ -103,7 +103,7 @@ nav a {
   letter-spacing: 0;
   font-family: 'Montserrat', sans-serif;
 
-  transition: color 0.3s ease; /* Плавний перехід кольору */
+  transition: color 0.3s ease; 
 }
 
 nav a:hover,
