@@ -51,7 +51,7 @@
 
 /* Логотип */
 .logo {
-  width: 200px;                /* Ширина логотипу */
+  width: 200px;               
   height: auto; 
   max-height: 100%;        
   filter: none;  /* Інверсія кольору (для білої версії) */
